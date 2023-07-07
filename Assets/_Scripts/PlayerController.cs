@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
         _cam = Camera.main;
         if(!_rb)
             TryGetComponent(out _rb);
+        TryGetComponent(out _weaponController);
     }
 
     // Update is called once per frame
